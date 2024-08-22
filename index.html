@@ -29,6 +29,9 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              "text-primary": "#212121",
+             "text-gray": "#737373",
+             "text-lightgreen": "#ABEF5F"
             },
           },
         },
@@ -40,8 +43,47 @@
       }
     </style>
   </head>
-  <body class="font-manrope">
-    <header></header>
+  <body class="font-manrope bg-[#F6F6F6]">
+    <header class="container mx-auto border-2 border-black">
+        <nav class="flex justify-between items-center">
+          <div class="flex gap-3">
+            <i class="fa-solid fa-arrow-right bg-text-lightgreen p-2 rounded-full -rotate-45"></i>
+            <h3 class="text-3xl font-extrabold">Rinterio</h3>
+          </div>
+          <div class="hidden md:block lg:block">
+            <ul class="flex gap-7 font-bold">
+                <li><a href="#">Home</a></li>
+                <li  class="text-text-gray"><a href="#">Services</a></li>
+                <li  class="text-text-gray"><a href="#">Portfolio</a></li>
+                <li  class="text-text-gray"><a href="#">Blogs</a></li>
+                <li  class="text-text-gray"><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="space-x-3 hidden md:hidden lg:block">
+            <div class="inline-block bg-[#fff] rounded-full">
+                <i class="fa-solid fa-magnifying-glass p-3"></i>
+            </div>
+            <div  class="inline-block bg-[#fff] rounded-full">
+                <i class="fa-solid fa-cart-shopping p-3"></i>
+            </div>
+             <button class="text-xl font-extrabold bg-text-lightgreen py-2 px-4 rounded-md"
+             >Book Consult <i class="fa-solid fa-arrow-right bg-black text-white p-2 rounded-full -rotate-45"></i></button>
+          </div>
+          <div class="block md:hidden lg:hidden">
+            &#9776;
+          </div>
+        </nav>
+    </header>
+
+    <!-- banner section -->
+     <section class="container mx-auto border-2 border-black mt-10">
+      <div class="text-center">
+        <img src="./assets/banner.png" alt="banner image" class="mx-auto">
+        <h1 class="text-6xl font-extrabold w-3/4 border-2 border-black mx-auto">A barn house of this design has a striking appearance</h1>
+        <p aria-checked="">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+      </div>
+      <button>View Details</button>
+     </section>
     <main></main>
     <footer></footer>
   </body>
